@@ -1,0 +1,13 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+    int x,y,w,h,x_val,y_val;
+    cin>>x>>y>>w>>h;
+    x_val=min(x,w-x);
+    y_val=min(y,h-y);
+    cout<<min(x_val,y_val);
+}
